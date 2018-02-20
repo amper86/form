@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Arial';
+  src: url('../fonts/arialregular.woff2') format('woff2'),
+  url('../fonts/arialregular.woff') format('woff'),
+  url('../fonts/arialregular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open-Sans';
+  src: url('../fonts/opensans-bold.woff2') format('woff2'),
+  url('../fonts/opensans-bold.woff') format('woff'),
+  url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tele2-Russia-Text';
+  src: url('../fonts/tele2russiatext-bold.woff2') format('woff2'),
+  url('../fonts/tele2russiatext-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}

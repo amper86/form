@@ -1,0 +1,30 @@
+
+@import "helpers/normalize";
+@import "fonts/fonts";
+
+body {
+  background-color: #000000;
+}
+
+p {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.arial {
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.open {
+  font-family: Open-Sans, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.tele {
+  font-family: Tele2-Russia-Text, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}

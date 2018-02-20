@@ -34,7 +34,7 @@ const paths = {
 //pug
 
 gulp.task('htmls', function () {
-    return gulp.src(paths.app + 'pug/**/*.pug')
+    return gulp.src(paths.app + 'pug/pages/*.pug')
         .pipe(plumber())
         .pipe(pug({
             pretty: true

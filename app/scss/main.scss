@@ -1,30 +1,20 @@
-
 @import "helpers/normalize";
 @import "fonts/fonts";
+@import "helpers/var";
+@import "helpers/mixin";
+@import "helpers/base";
 
-body {
-  background-color: #000000;
-}
+@import "layout/wrapper";
+@import "layout/body";
+@import "layout/aside";
+@import "layout/main";
 
-p {
-  color: #ffffff;
-  font-size: 30px;
-}
+@import "components/nav";
 
-.arial {
-  font-family: Arial, sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
+@import "pages/content";
+@import "pages/info-payment";
+@import "pages/table-info";
 
-.open {
-  font-family: Open-Sans, sans-serif;
-  font-weight: bold;
-  font-style: normal;
-}
+@import "components/footer";
 
-.tele {
-  font-family: Tele2-Russia-Text, sans-serif;
-  font-weight: bold;
-  font-style: normal;
-}
+//todo: создать и добавить файлы стилей формы

@@ -4,10 +4,9 @@ html(lang='ru-RU')
         meta(charset='utf-8')
         meta(content="width=device-width, initial-scale=1" name="viewport")
         meta(content="ie=edge" http-equiv="x-ua-compatible")
-        title Платежи
+        block head
         link(rel='stylesheet' href='css/main.min.css')
     body
         div.wrapper
-            p.arial Arial
-            p.open Open-Sans
-            p.tele Tele2
+            div.body
+                block content

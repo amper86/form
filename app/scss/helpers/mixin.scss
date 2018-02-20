@@ -1,5 +1,44 @@
-@mixin arialNormal() {
+//mixin fonts
+@mixin arial() {
   font-family: 'Arial', Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
+}
+
+@mixin openSans() {
+  font-family: 'Open-Sans', Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+@mixin tele2() {
+  font-family: 'Tele2-Russia-Text', Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+//breakpoints
+
+@mixin phones {
+  @media screen and (max-width: $smallDesktop) {
+    @content;
+  }
+}
+
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+
+@mixin phones {
+  @media screen and (max-width: $phoneSmall) {
+    @content;
+  }
 }

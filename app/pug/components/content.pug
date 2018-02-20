@@ -1,0 +1,57 @@
+div.content
+    div.info-payment
+        h2.info-payment__title Информация об оплате
+        table.info-payment__table.table-info
+            tr.table-info__row
+                td.table-info__name Номер счета:
+                td.table-info__value 87123658716587
+            tr.table__row
+                td.table-info__name Сумма платежа:
+                td.table-info__value 100 руб.
+    div.data-card
+        h2.data-card__title Данные банковской карты
+        div.form
+            form.form__elem(action='/' method='post')
+                div.form__container
+                    div.form__front
+                        div.form__row
+                            p.form__label-namber Номер карты
+                            input.form__card-number
+                            input.form__card-number
+                            input.form__card-number
+                            input.form__card-number
+                        div.form__row
+                            p.form__label-validity Срок действия
+                            select
+                                option 01
+                                option 02
+                                option 03
+                                option 04
+                                option 05
+                                option 06
+                                option 07
+                                option 08
+                                option 09
+                                option 10
+                                option 11
+                                option 12
+                            select
+                                option 2018
+                                option 2019
+                                option 2020
+                                option 2021
+                                option 2022
+                                option 2023
+                                option 2024
+                                option 2025
+                                option 2026
+                                option 2027
+                                option 2028
+                        div.form__row
+                            input.form__cardholder(type='text' placeholder='Держатель карты')
+                    div.form__back
+                        div.form__row
+                            label.form__label-cvc Код CVV2/CVC2
+                            input.form__input-cvc(type='text' placeholder='000')
+                    button.form__submit(type='submit') Оплатить
+                    //todo: разметка формы может меняться

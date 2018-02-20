@@ -1,0 +1,27 @@
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+  @include tablets {
+    font-size: 15px;
+  }
+  @include phones {
+    font-size: 14px;
+  }
+}
+
+body {
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*clearfix*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}

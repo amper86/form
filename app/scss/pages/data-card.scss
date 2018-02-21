@@ -1,0 +1,9 @@
+.data-card {
+
+  &__title {
+    margin: 25px 0;
+    @include openSans();
+    color: $titleColor;
+    font-size: 22px;
+  }
+}

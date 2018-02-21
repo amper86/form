@@ -1,6 +1,6 @@
 div.content
     div.info-payment
-        h2.info-payment__title Информация об оплате
+        h2.info-payment__title Информация по оплате
         table.info-payment__table.table-info
             tr.table-info__row
                 td.table-info__name Номер счета:
@@ -15,14 +15,14 @@ div.content
                 div.form__container
                     div.form__front
                         div.form__row
-                            p.form__label-namber Номер карты
-                            input.form__card-number
-                            input.form__card-number
-                            input.form__card-number
-                            input.form__card-number
+                            label.form__label(for='num-1') Номер карты
+                            input.form__input-number.form__input(id='num-1' name='num-1' maxlength=4 placeholder='0000')
+                            input.form__input-number.form__input(id='num-2' name='num-2' maxlength=4 placeholder='0000')
+                            input.form__input-number.form__input(id='num-3' name='num-3' maxlength=4 placeholder='0000')
+                            input.form__input-number.form__input(id='num-4' name='num-4' maxlength=4 placeholder='0000')
                         div.form__row
-                            p.form__label-validity Срок действия
-                            select
+                            label.form__label(for='month') Срок действия
+                            select.form__input.form__input-select(id='month' name='month')
                                 option 01
                                 option 02
                                 option 03
@@ -35,7 +35,7 @@ div.content
                                 option 10
                                 option 11
                                 option 12
-                            select
+                            select.form__input.form__input-select(id='year' name='year')
                                 option 2018
                                 option 2019
                                 option 2020
@@ -48,10 +48,10 @@ div.content
                                 option 2027
                                 option 2028
                         div.form__row
-                            input.form__cardholder(type='text' placeholder='Держатель карты')
+                            input.form__input.form__input-cardholder(type='text' maxlength='30' placeholder='Держатель карты')
                     div.form__back
-                        div.form__row
-                            label.form__label-cvc Код CVV2/CVC2
-                            input.form__input-cvc(type='text' placeholder='000')
-                    button.form__submit(type='submit') Оплатить
-                    //todo: разметка формы может меняться
+                        div.form__row.form__row_cvc
+                            label.form__label-cvc.form__label(for='cvc') Код CVV2 / CVC2
+                            input.form__input-cvc.form__input(id='cvc' name='cvc' type='text' placeholder='000' maxlength=3)
+                            div.form__help-cvc ?
+                button.form__submit(type='submit') Оплатить

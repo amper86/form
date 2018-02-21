@@ -1,0 +1,9 @@
+.info-payment {
+
+  &__title {
+    @include tele2();
+    font-size: 22px;
+    color: $titleColor;
+    margin: 15px 0 25px;
+  }
+}

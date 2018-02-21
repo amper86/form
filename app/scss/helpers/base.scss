@@ -1,7 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   height: 100%;
+  @include arial();
   font-size: 16px;
+  color: $textColor;
   @include tablets {
     font-size: 15px;
   }

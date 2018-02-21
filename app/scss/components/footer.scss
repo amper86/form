@@ -1,4 +1,10 @@
 .footer {
   background-color: $footerBg;
   color: $textFooter;
+  padding: 28px;
+
+  &__container {
+    @include arial();
+    font-size: 12px;
+  }
 }

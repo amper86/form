@@ -5,23 +5,21 @@
     min-height: 280px;
   }
 
-  &__front {
+  &__front, .form__back {
     width: 350px;
     padding: 15px;
     border: 1px solid #e4e9ee;
     border-radius: 8px;
     position: absolute;
+  }
+
+  &__front {
     z-index: 5;
     background-color: $whiteBg;
   }
 
   &__back {
-    width: 350px;
     height: 235px;
-    padding: 15px;
-    border: 1px solid #e4e9ee;
-    border-radius: 8px;
-    position: absolute;
     top: 30px;
     left: 195px;
     background: url("../images/gray-line.png") repeat-x left 25px $whiteBg;

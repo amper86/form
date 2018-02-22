@@ -3,6 +3,10 @@
   width: 40px;
   @include smallDesktop {
     display: block;
+
+    &:hover .burger__line {
+      background-color: $activeTextMenuColor;
+    }
   }
 
   &__line {
@@ -18,29 +22,4 @@
       margin-bottom: 0;
     }
   }
-
-  &_active {
-    //position: absolute;
-    z-index: 105;
-    /*top: auto;
-    right: 15px;*/
-
-    & .burger__line {
-      background-color: #ffffff;
-    }
-
-    & .burger__line:nth-child(1n+0) {
-      transform: rotate(45deg) translateY(20px);
-    }
-
-    & .burger__line:nth-child(2n+0) {
-      opacity: 0;
-    }
-
-    & .burger__line:nth-child(3n+0) {
-      transform: rotate(-45deg) translateY(-22px);
-    }
-  }
 }
-
-//todo: добавляется active при нажатии на гамбургер

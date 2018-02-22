@@ -1,0 +1,32 @@
+.discard {
+  display: none;
+  width: 40px;
+  @include smallDesktop {
+    display: block;
+  }
+
+  &:hover .discard__line {
+    background-color: $activeTextMenuColor;
+  }
+
+  &__line {
+    display: block;
+    height: 5px;
+    width: 40px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+
+  &__line:nth-child(1n+0) {
+    transform: rotate(45deg) translateY(20px);
+  }
+
+  &__line:nth-child(2n+0) {
+    opacity: 0;
+  }
+
+  &__line:nth-child(3n+0) {
+    transform: rotate(-45deg) translateY(-22px);
+  }
+}

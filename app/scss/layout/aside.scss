@@ -1,11 +1,16 @@
 .aside {
   width: 320px;
   float: left;
+  transition: .3s soft;
   @include smallDesktop {
     float: none;
     position: fixed;
-    top: 75px;
+    top: 0;
     left: -9999px;
+  }
+
+  &__discard {
+    margin: 20px 20px 0 90%;
   }
 
   &_open {
@@ -18,4 +23,3 @@
     }
   }
 }
-//todo: добавляется open при нажатии на гамбургер

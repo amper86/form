@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="format-detection" content="telephone=no">
+    <title>Платежи</title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="js/libs/jquery-3.2.1.min.js"></script>
+    <script src="js/script.min.js"></script>
+  </head>
+  <body>
+    <div class="wrapper"><a class="burger wrapper__burger" href="#"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></a>
+      <div class="body clearfix">
+        <aside class="aside"><a class="aside__discard discard" href="#"><span class="discard__line"></span><span class="discard__line"></span><span class="discard__line"></span></a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link" href="#">Личный кабинет</a></li>
+              <li class="nav__item nav__item_active"><a class="nav__link" href="#">Платежи</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">История платежей</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Настройки</a></li>
+              <li class="nav__item"><a class="nav__link" href="#">Выйти</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <main class="main">
+          <div class="content">
+            <div class="info-payment">
+              <h2 class="info-payment__title">Информация по оплате</h2>
+              <table class="info-payment__table table-info">
+                <tr class="table-info__row">
+                  <td class="table-info__name">Номер счета:</td>
+                  <td class="table-info__value">87123658716587</td>
+                </tr>
+                <tr class="table__row">
+                  <td class="table-info__name">Сумма платежа:</td>
+                  <td class="table-info__value">100 руб.</td>
+                </tr>
+              </table>
+            </div>
+            <div class="data-card">
+              <h2 class="data-card__title">Данные банковской карты</h2>
+              <div class="form">
+                <form class="form__elem" action="/" method="post" id="form-payment">
+                  <div class="form__container">
+                    <div class="form__front">
+                      <div class="form__row">
+                        <label class="form__label" for="num-1">Номер карты</label>
+                        <input class="form__input-number form__input" id="num-1" name="num-1" maxlength="4" placeholder="0000">
+                        <input class="form__input-number form__input" id="num-2" name="num-2" maxlength="4" placeholder="0000">
+                        <input class="form__input-number form__input" id="num-3" name="num-3" maxlength="4" placeholder="0000">
+                        <input class="form__input-number form__input" id="num-4" name="num-4" maxlength="4" placeholder="0000">
+                      </div>
+                      <div class="form__row">
+                        <label class="form__label" for="month">Срок действия</label>
+                        <select class="form__input form__input-select" id="month" name="month">
+                          <option>01</option>
+                          <option>02</option>
+                          <option>03</option>
+                          <option>04</option>
+                          <option>05</option>
+                          <option>06</option>
+                          <option>07</option>
+                          <option>08</option>
+                          <option>09</option>
+                          <option>10</option>
+                          <option>11</option>
+                          <option>12</option>
+                        </select>
+                        <select class="form__input form__input-select" id="year" name="year">
+                          <option>2018</option>
+                          <option>2019</option>
+                          <option>2020</option>
+                          <option>2021</option>
+                          <option>2022</option>
+                          <option>2023</option>
+                          <option>2024</option>
+                          <option>2025</option>
+                          <option>2026</option>
+                          <option>2027</option>
+                          <option>2028</option>
+                        </select>
+                      </div>
+                      <div class="form__row">
+                        <input class="form__input form__input-cardholder" type="text" maxlength="30" placeholder="Держатель карты">
+                      </div>
+                    </div>
+                    <div class="form__back">
+                      <div class="form__row form__row_cvc">
+                        <label class="form__label-cvc form__label" for="cvc">Код CVV2 / CVC2</label>
+                        <input class="form__input-cvc form__input" id="cvc" name="cvc" type="text" placeholder="000" maxlength="3">
+                        <div class="form__help-cvc">?</div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="form__submit" type="submit">Оплатить</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <footer class="footer">
+            <div class="footer__container">
+              <p>Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
+              <p>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
+              <p>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+              <p>Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
+            </div>
+          </footer>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

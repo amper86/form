@@ -1,4 +1,7 @@
 .content {
   background-color: $whiteBg;
   padding: 28px;
+  @include smallPhones {
+    padding: 28px 5px;
+  }
 }

@@ -19,7 +19,7 @@
 
 //breakpoints
 
-@mixin phones {
+@mixin smallDesktop {
   @media screen and (max-width: $smallDesktop) {
     @content;
   }
@@ -31,14 +31,20 @@
   }
 }
 
+@mixin smallTablets {
+  @media screen and (max-width: $smallTablets) {
+    @content;
+  }
+}
+
 @mixin phones {
   @media screen and (max-width: $phones) {
     @content;
   }
 }
 
-@mixin phones {
-  @media screen and (max-width: $phoneSmall) {
+@mixin smallPhones {
+  @media screen and (max-width: $smallPhones) {
     @content;
   }
 }

@@ -30,5 +30,8 @@
     text-decoration: none;
     background-color: $menuBg;
     transition: .3s linear;
+    @include smallPhones {
+      padding: 15px 10px;
+    }
   }
 }

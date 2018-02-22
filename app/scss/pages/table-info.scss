@@ -2,6 +2,9 @@
 
   &__name {
     width: 155px;
+    @include smallPhones {
+      width: auto;
+    }
   }
 
   &__value {

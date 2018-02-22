@@ -5,5 +5,14 @@
     font-size: 22px;
     color: $titleColor;
     margin: 15px 0 25px;
+    @include smallTablets {
+      text-align: center;
+    }
+  }
+
+  &__table {
+    @include smallTablets {
+      margin: 0 auto;
+    }
   }
 }

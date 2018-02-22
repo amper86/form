@@ -1,4 +1,8 @@
 .main {
   max-width: 640px;
   float: right;
+  @include smallDesktop {
+    float: none;
+    margin: 0 auto;
+  }
 }

@@ -1,5 +1,21 @@
 .aside {
- /* max-width: 320px;*/
   width: 320px;
   float: left;
+  @include smallDesktop {
+    float: none;
+    position: fixed;
+    top: 75px;
+    left: -9999px;
+  }
+
+  &_open {
+    left: 0;
+    z-index: 15;
+    background-color: $menuBg;
+    height: 100%;
+    @include smallPhones {
+      width: 100%;
+    }
+  }
 }
+//todo: добавляется open при нажатии на гамбургер
